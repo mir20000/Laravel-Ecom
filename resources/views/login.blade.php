@@ -1,7 +1,7 @@
 @extends('main')
 @section('login')
     
-<div class="container">
+<div class="container" style="margin-bottom: 75px; margin-top:75px">
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6 my-3 p-3 card border-warning mb-3">

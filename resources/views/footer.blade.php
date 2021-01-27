@@ -1,4 +1,4 @@
-<footer class="py-4 bg-dark text-white" style="margin-top: 150px">
+<footer class="py-4 bg-dark text-white">
     <div class="container text-center">
       <h5> My Footer</h5>
     </div>
