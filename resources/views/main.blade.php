@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" >
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,12 +8,33 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>ecom </title>
+    <title>Arttractive</title>
+    <style>
+      html,body{
+        overflow-x: hidden;
+      }
+      .darkimg{
+        filter: brightness(70%);
+      }
+      hr {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .card{
+        transition-duration: .5s;
+      }
+
+      .card:hover {
+        box-shadow: 0 0 20px rgba(3, 2, 2, 0.493); 
+        transform: scale(1.01);
+      }
+    </style>
   </head>
   <body>
 
     {{View::make('header')}}
-    @yield('login')
+    @yield('index')
     {{View::make('footer')}}
 
 

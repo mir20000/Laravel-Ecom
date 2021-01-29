@@ -1,5 +1,5 @@
 @extends('main')
-@section('login')
+@section('index')
     
 <div class="container" style="margin-bottom: 75px; margin-top:75px">
     <div class="row">

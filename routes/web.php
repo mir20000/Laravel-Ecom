@@ -25,3 +25,4 @@ Route::get('/logout', function () {
 
 Route::post("/login",[UserController::class,'login']);
 Route::get("/",[ProductController::class,'index']);
+Route::get("/product/{id}",[ProductController::class,'product_details']);
