@@ -29,6 +29,9 @@
         box-shadow: 0 0 20px rgba(3, 2, 2, 0.493); 
         transform: scale(1.01);
       }
+      .search{
+        width: 400px !important;
+      }
     </style>
   </head>
   <body>
