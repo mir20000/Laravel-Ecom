@@ -16,7 +16,15 @@ class UserController extends Controller
             $req->session()->put('user',$user);
             return redirect('/');
         }else {
-            return "User or Password doesn't match";
+            return redirect('login');
         }
+    }
+    function signUp(Request $rqst){
+        $user = new User;
+        $user->name= $rqst->name;
+        $user->email=$rqst->email;
+        $user->password=Hash::make($rqst->password);
+        $user->save();
+        return redirect('login');
     }
 }

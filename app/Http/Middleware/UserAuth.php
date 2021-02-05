@@ -19,7 +19,7 @@ class UserAuth
         if ($request->path()=='login' && $request->session()->has('user')) {
             return redirect('/');
         }
-        elseif(!($request->path()=='login') && !($request->session()->has('user'))){
+        elseif(!($request->path()=='signup') &&!($request->path()=='login') && !($request->session()->has('user'))){
             return redirect('login');
         }
         return $next($request);

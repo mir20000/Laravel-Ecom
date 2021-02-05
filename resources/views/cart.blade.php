@@ -3,7 +3,7 @@
     
 <div class="container my-5">
     <div class="row text-center">
-        <div class="col-sm-4"><h4>Item in your cart</h4></div>
+        <div class="col-sm-4"><h4>Item(s) in your cart</h4></div>
         <div class="col-sm-4"><h4>Total Price: Rs. {{$total}}</h4></div>
         @if ($total!=0)
             <div class="col-sm-4"><a href="ordernow" class="btn btn-success">Order Now</a></div>

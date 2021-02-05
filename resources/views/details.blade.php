@@ -13,13 +13,19 @@
             <p><strong>Description:</strong> {{$product['description']}}</p>
             <br>
             <div class="row">
-                <div class="p-1"><button type="button" class="btn btn-primary">Buy Now</button> </div>
                 <div class="p-1">
-                <form action="/addtocart" method="POST">
-                    @csrf
-                    <input type="hidden" name="product_id" value="{{$product['id']}}">
-                    <button type="submit" class="btn btn-success">Add to Cart</button>
-                </form>
+                    <form action="/buynow" method="POST">
+                        @csrf
+                        <input type="hidden" name="product_id" value="{{$product['id']}}">
+                        <button type="submit" class="btn btn-info">Buy Now</button>
+                    </form>
+                </div>
+                <div class="p-1">
+                    <form action="/addtocart" method="POST">
+                        @csrf
+                        <input type="hidden" name="product_id" value="{{$product['id']}}">
+                        <button type="submit" class="btn btn-success">Add to Cart</button>
+                    </form>
                 </div>
             </div>
         </div>

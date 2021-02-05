@@ -41,7 +41,10 @@ if (Session::has('user')) {
       </li>
       @else
       <li class="nav-item active">
-        <a class="nav-link" href="/login">Login &nbsp</a>
+        <a class="nav-link" href="/login">LogIn &nbsp</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/signup">SignUp &nbsp</a>
       </li>
       @endif
     </div>

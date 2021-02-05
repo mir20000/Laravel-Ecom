@@ -36,6 +36,18 @@ class ProductController extends Controller
         }
         
     }
+    function buyNow(Request $rqst){
+        if ($rqst->session()->has('user')) {
+            $addtocart = new Cart;
+            $addtocart->user_id= $rqst->session()->get('user')['id'];
+            $addtocart->product_id= $rqst->product_id;
+            $addtocart->save();
+            return redirect('/cart');
+        }else {
+            return redirect('/login');
+        }
+        
+    }
     static function cartItemCount()
         {
             $userId= Session::get('user')['id'];
